@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ZainID</string>
+    <string name="msg_check_network">Checking connection</string>
+    <string name="msg_invalid_towerstation">Invalid tower station</string>
+
+
+    <string name="ab_title_tower_list">ZainID - Site List</string>
+    <string name="ab_title_tower_add">ZainID - New Site</string>
+
+    <string name="title_new_tower_station">New Site</string>
+    <string name="hint_tower_station_id">site ID</string>
+    <string name="hint_tower_station_lat">latitude</string>
+    <string name="hint_tower_station_lon">longitude</string>
+    <string name="hint_tower_station_address">address</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+</resources>

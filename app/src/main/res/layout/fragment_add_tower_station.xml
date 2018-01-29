@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/standard_margin"
+    tools:context="com.gramiware.mobile.tslocator.fragments.AddTowerStationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAddTowerStationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/title_new_tower_station"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            android:id="@+id/etTowerStationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddTowerStationTitle"
+            android:hint="@string/hint_tower_station_id"/>
+
+        <LinearLayout
+            android:id="@+id/lytLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/etTowerStationId">
+
+            <EditText
+                android:id="@+id/etTowerStationLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAddTowerStationTitle"
+                android:hint="@string/hint_tower_station_lat"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/etTowerStationLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAddTowerStationTitle"
+                android:hint="@string/hint_tower_station_lon"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etTowerStationAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lytLocation"
+            android:hint="@string/hint_tower_station_address"/>
+
+        <LinearLayout
+            android:id="@+id/lytActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnCancelNewTower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_cancel"/>
+
+
+            <Button
+                android:id="@+id/btnSaveNewTower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_save"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_background"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
